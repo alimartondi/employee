@@ -16,9 +16,9 @@ export default function UserLists() {
   }, []);
 
   return (
-    <div>
+    <div className="h-screen">
       <Header />
-      <div className="container px-3 lg:px-20 mx-auto flex flex-col">
+      <div className="container px-3 lg:px-20 mx-auto flex flex-col h-full justify-center">
         <div className="sm:-mx-6 lg:-mx-8">
           <div className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
             <div className="shadow-sm overflow-hidden rounded-lg">
@@ -39,7 +39,7 @@ export default function UserLists() {
                     </th>
                     <th
                       scope="col"
-                      className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                      className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider hidden md:block"
                     >
                       Status
                     </th>
@@ -74,7 +74,7 @@ export default function UserLists() {
                           </div>
                         </div>
                       </td>
-                      <td className="px-6 py-4 whitespace-nowrap">
+                      <td className="px-6 py-4 whitespace-nowrap hidden md:block">
                         <span className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 ">
                           Active
                         </span>
