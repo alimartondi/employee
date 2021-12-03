@@ -71,7 +71,7 @@ export default function Login() {
                   </label>
                 </div>
               </div>
-              <Link to="/userlists">
+              <Link to="/users">
                 <button className="bg-blue-500 py-3 w-full rounded-lg text-white font-medium">
                   Login
                 </button>
