@@ -3,6 +3,7 @@ import "./App.css";
 import Login from "./pages/Login";
 import UserLists from "./pages/UserLists";
 import UserDetail from "./pages/UserDetail";
+import Notfound from "./components/NotFound";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Route path="/" exact element={<Login />} />
           <Route path="/users" exact element={<UserLists />} />
           <Route path="/users/:id" exact element={<UserDetail />} />
+          <Route path="*" element={<Notfound />} />
         </Routes>
       </div>
     </Router>
